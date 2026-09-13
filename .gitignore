@@ -1,0 +1,6 @@
+/bin/
+/build/
+*.o
+.DS_Store
+.remember/
+.Codex/
