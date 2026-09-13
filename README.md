@@ -1,8 +1,8 @@
 # Skull : rendu volumique 3D d’un scanner de tête
 
-Skull est un petit lecteur C++/OpenGL pour parcourir un scanner CT de tête. Il utilise le jeu de données **CThead**, qui contient 113 coupes de 256 × 256 pixels.
+Skull est un petit lecteur C++/OpenGL pour parcourir un scanner CT de tête. Il utilise le jeu de données **CTHead**, qui contient 113 coupes de 256 × 256 pixels.
 
-![Rendu osseux obtenu avec les données CThead](docs/assets/skull-render.png)
+![Rendu osseux obtenu avec le jeu de données CTHead](docs/assets/skull-render.png)
 
 La capture vient directement du programme, en mode osseux. Le crâne est calculé à partir des voxels du scanner, sans modèle 3D préparé à l’avance.
 
@@ -16,7 +16,7 @@ La capture vient directement du programme, en mode osseux. Le crâne est calcul�
 - afficher les commandes directement dans la fenêtre ;
 - tourner la vue au clavier et parcourir les coupes à la molette.
 
-Le scanner ne contient pas de masques séparés pour le cerveau, les méninges ou les artères. La vue du cerveau est donc une approximation fondée sur les intensités. Pour voir les artères correctement, il faudrait un angio-CT avec produit de contraste et une segmentation adaptée.
+Le jeu de données CTHead ne contient pas de masques séparés pour le cerveau, les méninges ou les artères. La vue du cerveau est donc une approximation fondée sur les intensités. Pour voir les artères correctement, il faudrait un angio-CT avec produit de contraste et une segmentation adaptée.
 
 ## Installation et lancement
 
@@ -59,7 +59,7 @@ Sous Linux, installe GLFW, OpenGL, `pkg-config` et un compilateur C++11. Le proj
 | `4` | Surface osseuse |
 | `5` | Transparence volumique |
 | `6` | Coupe en niveaux de gris |
-| `7` | Éclaté de cinq coupes réelles CThead |
+| `7` | Éclaté de cinq coupes réelles du jeu de données CTHead |
 | `8` | Peau translucide et cerveau estimé |
 | `+` / `-` | Augmenter ou diminuer l’opacité des modes concernés |
 | Molette, `[` / `]` | Déplacer la coupe |
@@ -142,6 +142,6 @@ Le dossier de destination doit exister. `./bin/skull --help` affiche les options
 
 ## Sources et licences
 
-Le jeu CThead est attribué à l’**University of North Carolina**, au **North Carolina Memorial Hospital** et à l’archive de données de **Stanford University**. Le code historique fourni avec l’exemple est attribué à **Michel Grave** ; sa licence de redistribution n’est pas explicitement établie dans les sources disponibles. GLFW est utilisé sous licence zlib/libpng.
+Le jeu de données CTHead est attribué à l’**University of North Carolina**, au **North Carolina Memorial Hospital** et à l’archive de données de **Stanford University**. Le code historique fourni avec l’exemple est attribué à **Michel Grave** ; sa licence de redistribution n’est pas explicitement établie dans les sources disponibles. GLFW est utilisé sous licence zlib/libpng.
 
 Les références et les textes de licence sont regroupés dans [docs/SOURCES_AND_LICENSES.md](docs/SOURCES_AND_LICENSES.md) et [docs/GLFW-LICENSE.md](docs/GLFW-LICENSE.md).
