@@ -2,9 +2,9 @@
 
 Skull est un petit lecteur C++/OpenGL pour parcourir un scanner CT de tête. Il utilise le jeu de données **CTHead**, qui contient 113 coupes de 256 × 256 pixels.
 
-![Rendu osseux obtenu avec le jeu de données CTHead](docs/assets/skull-render.png)
+![Planche de rendu croisant quatre vues du jeu de données CTHead](docs/assets/skull-showcase.png)
 
-La capture vient directement du programme, en mode osseux. Le crâne est calculé à partir des voxels du scanner, sans modèle 3D préparé à l’avance.
+Cette planche rassemble quatre sorties du programme : la comparaison tissus/os, le squelette, la transparence volumique et une coupe CT. Elles viennent du même volume CTHead et permettent de voir en un coup d’œil ce que changent les différents modes de rendu. Une capture du seul mode osseux reste disponible dans [docs/assets/skull-render.png](docs/assets/skull-render.png).
 
 ## Fonctionnalités
 
